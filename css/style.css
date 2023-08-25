@@ -3,9 +3,17 @@
 /* 'Righteous', cursive;
     'Sarala', sans-serif */
 
+:root {
+    --cor-de-fundo: linear-gradient(5deg, rgba(31,19,17,1) 2%, rgba(4,26,21,1) 43%, rgba(4,26,21,1) 97%);    ;
+    --cor-principal: #041A15;
+    --cor-destaque: #B79760;
+    --cor-letra: #FFFFFF;
+    --cor-secundaria: #8d704c;
+}
+
 body {
-    background: linear-gradient(38deg, #2F2325 0%, #8E5D52 100%);
-    color: #FFF2E7;
+    background: var(--cor-de-fundo);
+    color: var(--cor-letra);
 }
 
 .cabecalho {
@@ -26,13 +34,13 @@ body {
 
 .cabecalho-menu-item {
     font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
+    color: var(--cor-letra);
     font-weight: 400;
     font-size: 18px;
 }
 
 .container {
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid var(--cor-destaque);
     margin-bottom: 48px;
 }
 
@@ -52,18 +60,18 @@ body {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
-    color: #FFF2E7;
+    color: var(--cor-destaque);
 }
 
 .container-principal-texto-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #ECD6C4;
+    color: var(--cor-secundaria);
 }
 
 .container-principal-texto-botao {
-    background-color: #ECD6C4;
+    background-color: var(--cor-letra);
     width: 180px;
     height: 60px;
     border: none;
@@ -72,7 +80,7 @@ body {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #2F2325;
+    color: var(--cor-principal);
 }
 
 .container-principal-texto-botao:hover {
@@ -92,12 +100,12 @@ body {
 }
 
 .container-secundario-titulo {
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid var(--cor-destaque);
     padding-top: 48px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
-    color: #FFF2EF;
+    color: var(--cor-letra);
     margin-bottom: 16px;
 }
 
@@ -110,7 +118,7 @@ body {
 
 .rodape {
     padding: 32px;
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid var(--cor-destaque);
 }
 
 .rodape-imagem {
